@@ -1,0 +1,159 @@
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage[margin=0.75in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+% Define colors
+\definecolor{darkblue}{RGB}{0, 51, 102}
+
+% Formatting for section titles
+\titleformat{\section}{\large\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+% Remove default paragraph indentation
+\setlength{\parindent}{0pt}
+
+% Custom command for job entries
+\newcommand{\jobtitle}[4]{
+    \textbf{#1} \textit{#2} \hfill #3, #4 \\
+}
+
+% Custom command for job descriptions
+\newcommand{\jobdesc}[1]{
+    \begin{itemize}[nosep, leftmargin=0.25in]
+        #1
+    \end{itemize}
+}
+
+% Start document
+\begin{document}
+
+% Header
+\begin{center}
+    \textbf{\Large Dennis Gavrilenko} \\
+    (925) 470-7127 \,|\, \href{mailto:dennisg009@g.ucla.edu}{dennisg009@g.ucla.edu} \,|\, \href{http://www.linkedin.com/in/dennis-gavrilenko}{linkedin.com/in/dennis-gavrilenko} \,|\, \href{http://www.interosity.co}{interosity.co}
+\end{center}
+
+% Education Section
+\section{EDUCATION}
+
+\textbf{University of California, Los Angeles (UCLA)} \hfill Los Angeles, CA \\
+\textit{B.A. in Business Economics, Minors in Data Science Engineering, Geology} \hfill Sep 2021 -- Mar 2025 \\
+GPA: 3.8/4.0, Dean's Honor List \,|\, SAT: 1580, ACT: 35 \\
+\textbf{Relevant Coursework:} Natural Language Processing, Computer Vision, Data Science, Intro to Machine Learning, Econometrics, Intro to Computer Science I/II, Programming in R, Linear Algebra, Micro/Macroeconomic Theory, Probability Theory, Calculus I/II/III, Intro Accounting
+
+\vspace{5pt}
+
+\textbf{Sciences Po} \hfill Paris, France \\
+\textit{Semester Exchange: International Trade \& Finance, Labor Economics, Corporate Governance, French Imperial History, French A1} \hfill Aug 2023 -- Dec 2023
+
+% Professional Experience Section
+\section{PROFESSIONAL EXPERIENCE}
+
+\jobtitle{UCLA Undergraduate Admission}{| Campus Tour Guide}{Los Angeles}{CA}
+\small Jan 2023 -- Present
+\jobdesc{
+    \item Providing in-depth, informative, 90-minute tours of the UCLA campus to 2000+ guests (prospective and admitted students).
+    \item Showing everyone how wonderful and amazing UCLA is and encouraging thousands of students to pursue higher education.
+}
+
+\vspace{3pt}
+
+\jobtitle{Boston Consulting Group (BCG)}{| Summer Associate}{Seattle}{WA}
+\small Jun 2024 -- Aug 2024
+\jobdesc{
+    \item Recommended strategies for a major US family foundation's board to reduce staff tensions and streamline operations.
+    \item Interviewed 20+ executives, board members, and industry leaders to identify best operations practices to address pain points.
+    \item Led an extensive analysis of 15+ major US cities to identify the best location for an upcoming headquarters move.
+    \item Conducted a peer benchmarking analysis to identify foundation's weak points in OpEx, grantmaking efficiency, and impact.
+}
+
+\vspace{3pt}
+
+\jobtitle{The Kraft Heinz Company}{| Product Manager Intern}{Chicago}{IL}
+\small Jun 2023 -- Aug 2023
+\jobdesc{
+    \item Built four dashboards for digital supply chain team to make data-driven decisions while managing 15+ stakeholder interests.
+    \item Created an interactive data visualization model with Excel pivot tables, decreasing unordered customer inventory by 20\%.
+    \item Coordinated product development with 10+ data engineers and UX designers to align product vision with business goals.
+}
+
+\vspace{3pt}
+
+\jobtitle{Amazon Prime Gaming}{| Product Consultant}{Los Angeles}{CA}
+\small Apr 2023 -- Jun 2023
+\jobdesc{
+    \item Developed a product roadmap and designed 5+ high-fidelity mock-ups in Figma for Amazon Prime Gaming's website.
+    \item Created two strategies to gamify UX with weekly website prizes, increasing user retention by 25\% and signups by 10\%.
+}
+
+\vspace{3pt}
+
+\jobtitle{kommu}{| Product Manager Intern}{Los Angeles}{CA}
+\small Mar 2023 -- Jun 2023
+\jobdesc{
+    \item Planned technical feature set and designed 20+ high-fidelity mock-ups in Figma for a tech startup's new web portal login.
+    \item Analyzed 200+ user's data to determine top growing markets and recommended three new marketing strategies for Q3, Q4.
+}
+
+\vspace{3pt}
+
+\jobtitle{Hussle}{| Marketing Lead}{Los Angeles}{CA}
+\small Aug 2022 -- Dec 2022
+\jobdesc{
+    \item Collaborated with development and customer success teams to create two new startup app features based on user feedback.
+    \item Directed all marketing operations, created a \$3000 marketing budget, distributed 1000+ flyers, organized 3 outreach efforts.
+}
+
+\vspace{3pt}
+
+\jobtitle{First Republic Bank}{| Lending Services Intern}{San Francisco}{CA}
+\small Jun 2022 -- Sep 2022
+\jobdesc{
+    \item Built a dashboard with pivot tables and Excel VBA to analyze 100+ intern surveys and recommend 3 areas for improvement.
+    \item Digitized the bank's paper housing records system to simplify access and increase loan closing efficiency by 25\%.
+    \item Continuously communicated and implemented changing needs for 40+ stakeholders, including 2 managers and 35+ clients.
+}
+
+% Leadership and Volunteer Section
+\section{LEADERSHIP AND VOLUNTEER EXPERIENCE}
+
+\jobtitle{The Bruin Group Consulting}{| Project Manager, Senior Consultant}{Los Angeles}{CA}
+\small Jan 2022 -- Present
+\jobdesc{
+    \item Led a 10-week, 5-person project to create growth strategies to increase a startup carpooling service's user base by 300\%.
+    \item Created a developer marketing strategy and implementation timeline for a startup's SaaS and API products.
+}
+
+\vspace{3pt}
+
+\jobtitle{Boy Scouts of America}{| Senior Patrol Leader, Quartermaster}{Antioch}{CA}
+\small Feb 2014 -- Sep 2021
+\jobdesc{
+    \item Led my troop of 20+ Scouts on extended camping trips, earned 51 merit badges, advanced 10+ younger Scouts' ranks.
+    \item Participated in several city clean-ups and Christmas tree pickups while volunteering hundreds of community service hours.
+    \item Volunteered in 13 Eagle Scout Projects, earned 2 Eagle Scout Mentor pins, completed National Youth Leadership Training.
+}
+
+% Skills Section
+\section{SKILLS AND INTERESTS}
+
+\textbf{Programming Skills:} Data Analysis (Python, R, SQL, VBA, Power BI, Excel, PowerPoint), Project Management (Jira, Notion, Agile Development, Scrum), Product Marketing (User Research, A/B Testing, Setting KPIs), Java, C++.
+
+\vspace{3pt}
+
+\textbf{Languages:} Fluent in Russian and English, learning French so that I can talk to the Parisian baker in my neighborhood.
+
+\vspace{3pt}
+
+\textbf{Achievements:} Eagle Scout, WayUp Top 100 Intern (2023), LA Marathon finisher (2023, 2024), SF Marathon finisher (2024), backpacked from Lake Tahoe to Yosemite, climbed highest volcano in CA (Mt. Shasta) twice.
+
+\vspace{3pt}
+
+\textbf{Interests:} Growing ghost peppers, science fiction novels, juggling, poker, geology, raising chickens, Roman archaeology.
+
+\end{document}

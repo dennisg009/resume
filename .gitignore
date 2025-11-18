@@ -1,0 +1,9 @@
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.pdf
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+.DS_Store
