@@ -1,47 +1,52 @@
-\documentclass[10pt]{article}
+\documentclass[10pt]{article} % sets font size to 10pt
 
 % Packages
-\usepackage[margin=0.5in]{geometry}
-\usepackage[hidelinks]{hyperref}
-\usepackage{titlesec}
-\usepackage{enumitem}
-\usepackage{xcolor}
+\usepackage[margin=0.5in]{geometry} % sets margins to 0.5in
+\usepackage[hidelinks]{hyperref} % adds hyperlinks to the document
+\usepackage{titlesec} % allows for custom section formatting
+\usepackage{enumitem} % allows for custom list formatting
+\usepackage{xcolor} % allows for custom colors
 
-% Define colors
+% Sets color shades for section titles  
 \definecolor{darkblue}{RGB}{0, 51, 102}
 
 % Formatting for section titles
 \titleformat{\section}{\large\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{5pt}
 
-% Remove default paragraph indentation
+% Removes default paragraph indentation
 \setlength{\parindent}{0pt}
 
-% Custom command for job entries
+% Custom formatting for job entries
+% #1 is the company name
+% #2 is the job title (e.g. Product Manager Intern, Marketing Lead, etc.)
+% #3 is the location (e.g. Los Angeles, CA; Seattle, WA; Chicago, IL; etc.)
+% #4 is the date (e.g. Jan 2023 -- Mar 2025; Jun 2024 -- Aug 2024; etc.)
 \newcommand{\jobtitle}[4]{
     \textbf{#1} \textbar\ \textit{#2} \textbar\ #3 \hfill \textbf{#4}
 }
 
-% Custom command for job descriptions
+% Custom formatting for job descriptions
+% Creates a new bullet-point list environment with no separation between items and a left margin of 0.25in
 \newcommand{\jobdesc}[1]{
     \begin{itemize}[nosep, leftmargin=0.25in]
         #1
     \end{itemize}
 }
 
-% Remove page numbers
+% Removes page numbers from the document
 \pagestyle{empty}
 
-% Start document
+% Start of the actual document!!
 \begin{document}
 
-% Header
+% Header section
 \begin{center}
     \textbf{\Large Dennis Gavrilenko} \\
     (925) 470-7127 \textbar\ \href{mailto:dennisg009@gmail.com}{dennisg009@gmail.com} \textbar\ \href{http://www.linkedin.com/in/dennis-gavrilenko}{linkedin.com/in/dennis-gavrilenko} \textbar\ \href{http://www.interosity.co}{interosity.co}
 \end{center}
 
-% Education Section
+% Education section
 \section{EDUCATION}
 
 \textbf{University of California, Los Angeles (UCLA)} \textbar\ Los Angeles, CA \hfill \textbf{Sep 2021 -- Mar 2025} \\
@@ -53,7 +58,7 @@ B.A. in Business Economics, Minor in Data Science Engineering \textbar\ GPA: 3.7
 \textbf{Sciences Po} \textbar\ Paris, France \hfill \textbf{Aug 2023 -- Dec 2023} \\
 \textit{Semester Exchange: International Trade \& Finance, Labor Economics, Corporate Governance, French Imperial History}
 
-% Professional Experience Section
+% Professional Experience section
 \section{PROFESSIONAL EXPERIENCE}
 
 \jobtitle{UCLA Undergraduate Admission}{Campus Tour Guide}{Los Angeles, CA}{Jan 2023 -- Mar 2025}
@@ -61,6 +66,8 @@ B.A. in Business Economics, Minor in Data Science Engineering \textbar\ GPA: 3.7
     \item Provided in-depth, informative, 90-minute tours of the UCLA campus to 2000+ guests (prospective/admitted students).
     \item Showed everyone how wonderful and amazing UCLA is and encouraged thousands of students to pursue higher education.
 }
+
+ % Dennis was here!
 
 \vspace{3pt}
 
@@ -114,7 +121,7 @@ B.A. in Business Economics, Minor in Data Science Engineering \textbar\ GPA: 3.7
     \item Continuously communicated, implemented changing needs for 40+ stakeholders, including 2 managers and 35+ clients.
 }
 
-% Leadership and Volunteer Section
+% Leadership and Volunteer section
 \section{LEADERSHIP AND VOLUNTEER EXPERIENCE}
 
 \jobtitle{The Bruin Group Consulting}{Project Manager, Senior Consultant}{Los Angeles, CA}{Jan 2022 -- Mar 2025}
@@ -132,7 +139,7 @@ B.A. in Business Economics, Minor in Data Science Engineering \textbar\ GPA: 3.7
     \item Volunteered in 13 Eagle Scout Projects, earned 2 Eagle Scout Mentor pins, National Youth Leadership Training.
 }
 
-% Skills Section
+% Skills and Interests section
 \section{SKILLS AND INTERESTS}
 
 \textbf{Programming Skills:} Data Analysis (Python, R, SQL, VBA, Excel, PowerPoint), Project Management (Jira, Notion, Agile Development, Scrum), Product Marketing (User Research, A/B Testing, Setting KPIs), Java, C++.
